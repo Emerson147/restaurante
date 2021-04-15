@@ -31,7 +31,7 @@ $(document).on('click', '.nav-menu a, .mobile-nav a, scrollto', function(e) {
 
             if ($(this).parents('.nav-menu, .mobile-nav').length) {
                 $('.nav-menu .active .mobile-nav .active').removeClass('active');
-                $(this).closes('li').addClass('active');
+                $(this).closest('li').addClass('active');
             }
 
             if ($('body').hasClass('mobile-nav-active')) {
